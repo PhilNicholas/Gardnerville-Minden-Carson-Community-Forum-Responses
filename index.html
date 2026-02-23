@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Group Response Templates</title>
+  <title>Admin Responses</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #ffffff;
     }
     .response-card {
       cursor: pointer;
@@ -28,13 +28,13 @@
 </head>
 <body>
   <div class="container py-4">
-    <h1 class="mb-1 fs-4 fw-semibold">Group Response Templates</h1>
-    <p class="text-muted mb-4">Click a card to copy its response to the clipboard.</p>
+    
+    <div class="alert alert-info mb-4">Click a card to copy its response to the clipboard.</div>
 
     <div class="row g-3">
 
       <div class="col-12">
-        <h2 class="fs-6 fw-semibold text-uppercase text-muted mb-0 border-bottom pb-1">Post Responses</h2>
+        <h2 class="fs-6 fw-semibold text-muted mb-0 border-bottom pb-1 text-center">Pending Post Responses</h2>
       </div>
 
       <div class="col-md-6">
@@ -63,21 +63,8 @@
         </div>
       </div>
 
-      <div class="col-12 mt-2">
-        <h2 class="fs-6 fw-semibold text-uppercase text-muted mb-0 border-bottom pb-1">Membership Request Responses</h2>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm response-card"
-          data-response="You didn't answer all the membership questions. (We give requestors about a week to do so.) If you wish to join, please answer all three membership questions.">
-          <div class="card-header d-flex justify-content-between align-items-center">
-            <span class="fw-semibold">Didn't answer questions</span>
-            <span class="copy-feedback">Copied!</span>
-          </div>
-          <div class="card-body">
-            You didn't answer all the membership questions. (We give requestors about a week to do so.) If you wish to join, please answer all three membership questions.
-          </div>
-        </div>
+      <div class="col-12 mt-5">
+        <h2 class="fs-6 fw-semibold text-muted mb-0 border-bottom pb-1 text-center">Membership Request Responses</h2>
       </div>
 
       <div class="col-md-6">
@@ -89,6 +76,19 @@
           </div>
           <div class="card-body">
             You answered the membership question, but you need to check the box agreeing to group rules. (This is a standard feature on Facebook). Please read the group rules and feel free to re-submit your membership request, just be sure to answer both questions and check the box.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm response-card"
+          data-response="You didn't answer all the membership questions. (We give requestors about a week to do so.) If you wish to join, please answer all three membership questions.">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="fw-semibold">Didn't answer questions</span>
+            <span class="copy-feedback">Copied!</span>
+          </div>
+          <div class="card-body">
+            You didn't answer all the membership questions. (We give requestors about a week to do so.) If you wish to join, please answer all three membership questions.
           </div>
         </div>
       </div>
